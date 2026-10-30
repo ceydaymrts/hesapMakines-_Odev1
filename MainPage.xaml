@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesi.MainPage"
+    Title="Hesap Makinesi">
+
+    <Grid Padding="16"
+          RowDefinitions="Auto,*,*,*,*,*,*"
+          ColumnDefinitions="*,*,*,*"
+          RowSpacing="8"
+          ColumnSpacing="8">
+
+        <Label x:Name="SonucLabel"
+               Text="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="4"
+               FontSize="48"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Center"
+               Margin="0,20,8,20" />
+
+        <Button Text="C" Grid.Row="1" Grid.Column="0"
+                Clicked="Temizle_Clicked" />
+        <Button Text="⌫" Grid.Row="1" Grid.Column="1"
+                Clicked="Sil_Clicked" />
+        <Button Text="÷" Grid.Row="1" Grid.Column="2"
+                Clicked="Islem_Clicked" />
+        <Button Text="×" Grid.Row="1" Grid.Column="3"
+                Clicked="Islem_Clicked" />
+
+        <Button Text="7" Grid.Row="2" Grid.Column="0" Clicked="Sayi_Clicked" />
+        <Button Text="8" Grid.Row="2" Grid.Column="1" Clicked="Sayi_Clicked" />
+        <Button Text="9" Grid.Row="2" Grid.Column="2" Clicked="Sayi_Clicked" />
+        <Button Text="−" Grid.Row="2" Grid.Column="3" Clicked="Islem_Clicked" />
+
+        <Button Text="4" Grid.Row="3" Grid.Column="0" Clicked="Sayi_Clicked" />
+        <Button Text="5" Grid.Row="3" Grid.Column="1" Clicked="Sayi_Clicked" />
+        <Button Text="6" Grid.Row="3" Grid.Column="2" Clicked="Sayi_Clicked" />
+        <Button Text="+" Grid.Row="3" Grid.Column="3" Clicked="Islem_Clicked" />
+
+        <Button Text="1" Grid.Row="4" Grid.Column="0" Clicked="Sayi_Clicked" />
+        <Button Text="2" Grid.Row="4" Grid.Column="1" Clicked="Sayi_Clicked" />
+        <Button Text="3" Grid.Row="4" Grid.Column="2" Clicked="Sayi_Clicked" />
+        <Button Text="=" Grid.Row="4" Grid.Column="3"
+                Grid.RowSpan="2"
+                Clicked="Esittir_Clicked" />
+
+        <Button Text="+/−" Grid.Row="5" Grid.Column="0"
+                Clicked="Isaret_Clicked" />
+        <Button Text="0" Grid.Row="5" Grid.Column="1" Clicked="Sayi_Clicked" />
+        <Button Text="," Grid.Row="5" Grid.Column="2" Clicked="Virgul_Clicked" />
+
+    </Grid>
+</ContentPage>

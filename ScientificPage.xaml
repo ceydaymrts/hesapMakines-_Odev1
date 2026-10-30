@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesi.ScientificPage"
+    Title="Bilimsel Hesap Makinesi">
+
+    <Grid Padding="16"
+          RowDefinitions="Auto,*,*,*,*"
+          ColumnDefinitions="*,*,*"
+          RowSpacing="12"
+          ColumnSpacing="12">
+
+        <Label x:Name="SonucLabel"
+               Text="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="3"
+               FontSize="42"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Center"
+               Margin="0,20"/>
+
+        <Button Text="√x"
+                Grid.Row="1" Grid.Column="0"
+                Clicked="Karekok_Clicked"/>
+        <Button Text="x²"
+                Grid.Row="1" Grid.Column="1"
+                Clicked="Kare_Clicked"/>
+        <Button Text="x³"
+                Grid.Row="1" Grid.Column="2"
+                Clicked="Kup_Clicked"/>
+
+        <Button Text="sin"
+                Grid.Row="2" Grid.Column="0"
+                Clicked="Sin_Clicked"/>
+        <Button Text="cos"
+                Grid.Row="2" Grid.Column="1"
+                Clicked="Cos_Clicked"/>
+        <Button Text="tan"
+                Grid.Row="2" Grid.Column="2"
+                Clicked="Tan_Clicked"/>
+
+        <Button Text="log"
+                Grid.Row="3" Grid.Column="0"
+                Clicked="Log_Clicked"/>
+        <Button Text="ln"
+                Grid.Row="3" Grid.Column="1"
+                Clicked="Ln_Clicked"/>
+        <Button Text="C"
+                Grid.Row="3" Grid.Column="2"
+                Clicked="Temizle_Clicked"/>
+
+        <Entry x:Name="SayiEntry"
+               Placeholder="Sayı gir"
+               Keyboard="Numeric"
+               Grid.Row="4"
+               Grid.ColumnSpan="3"/>
+
+    </Grid>
+</ContentPage>
