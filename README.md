@@ -1,2 +1,4 @@
 # hesapMakines-_Odev1
 .NET MAUI hesap makinesi ödev 1
+##ÖDEV TANITIM VİDEOUSU
+https://1drv.ms/v/c/f0ae45a2e3a8fb70/IQCxU6bce8XIQKWffeh691fCATV3iQwTavvg0TU_0-lDdv0?e=deWN4y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
